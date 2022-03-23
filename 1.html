@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>华测检测认证集团股份有限公司</title>
+    <link href="/common/login/css/login.css" rel="stylesheet" rev="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" charset="UTF-8" src="/common/js/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/common/js/jquery/jquery.cookie.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="/common/login/js/login.js"></script>
+</head>
+<script type="text/javascript">
+var CONTEXT_PATH = '',
+	LOCALE = 'zh_cn';
+
+</script>
+<body>
+<div id="loading-mask"></div>
+<div id="loading">
+    <div class="loading-indicator">
+        <div id="facebookG">
+            <div id="block_1" class="facebook_blockG"></div>
+            <div id="blockG_2" class="facebook_blockG"></div>
+            <div id="blockG_3" class="facebook_blockG"></div>
+        </div>
+        正在加载中,请稍候...
+    </div>
+</div>
+<div class="comain">
+    <div class="header">
+        <div>
+            <div class="logo"></div>
+            <h1>华测检测认证集团股份有限公司</h1>
+            <span>登录</span>
+            <a href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html"
+               target="_blank">下载最新Chrome浏览器</a>
+        </div>
+    </div>
+    <div class="mian">
+        <form action="" method="post">
+            <table border="0" cellpadding="0" cellspacing="0" class="table">
+                <tr>
+                    <td><h2>欢迎使用本系统</h2></td>
+                </tr>
+                <tr>
+                    <td><input id="account" name="account" type="text" autocomplete="username" placeholder='账号'
+                               class="text1"/></td>
+                </tr>
+                <tr>
+                    <td><input id="password" name="password" type="password" autocomplete="current-password"
+                               placeholder='密码' class="text1"/></td>
+                </tr>
+                <tr id="captchaDiv">
+                    <td>
+                        <div style="float:left;">
+                            <input id="Captcha" name="addcode" type="text" placeholder='验证码' class="textcom"
+                                   style="width:245px"/>
+                        </div>
+                        <div class="input_check_box">
+                            <a href="javascript:;" title="不区分大小写，点击重新获得验证码" onClick="refreshAddcode();">
+	                                <span style="position:absolute;z-index:1;left:0px;top:0px;">
+	                                    <div id="outer-barG">
+											<div id="front-barG" class="bar-animationG">
+												<div id="barG_1" class="bar-lineG"></div>
+												<div id="barG_2" class="bar-lineG"></div>
+												<div id="barG_3" class="bar-lineG"></div>
+											</div>
+										</div>
+	                                </span>
+                                <img id="randomImage" name="randomImage" src=""' width="96" height="35" border="0"
+                                style="position:absolute;z-index:2;left:0px;">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value='登录' class="btn_login"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="footer">
+        <p>© 2014-2021 <strong><a href="http://www.vwinway.com/" target="_blank">深圳华测</a></strong>
+            版权所有&nbsp&nbsp&nbsp&nbsp<a href="http://beian.miit.gov.cn" target="_blank">粤ICP备10021358号</a></p>
+    </div>
+</div>
+</body>
+</html>

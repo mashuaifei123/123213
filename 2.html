@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>华测检测认证集团股份有限公司</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript">
+	var LOCALE = 'zh_cn';
+
+    </script>
+    <script type="text/javascript" charset="UTF-8" src="/common/js/bootstrap.js?version=20200702"
+            extVersion="6.2.0"></script>
+    <script type="text/javascript" charset="UTF-8" src="/common/js/moment.js"></script>
+</head>
+<script type="text/javascript">
+moment.locale();
+Ext.BLANK_IMAGE_URL = '/common/style/images/s.gif';
+Ext.form.Field.prototype.msgTarget = 'qtip';
+if (DevUtil){
+    DevUtil.isDevelopment = isDevUtilDevelopment
+    DevUtil.pageSize = '';
+    DevUtil.contextPath = '';
+    DevUtil.extJsVersion = '6.2.0';
+    DevUtil.appName = '华测检测认证集团股份有限公司';
+    DevUtil.extTheme = window.extTheme;
+    DevUtil.isUseEWebEditor = false;
+    DevUtil.isUploadImageToSpServer = false;
+
+    if (DevUtil.Upload){
+        DevUtil.Upload.FILELIMIT_IMAGE = '5MB';
+        DevUtil.Upload.FILELIMIT_VIDEO = '500MB';
+        DevUtil.Upload.FILELIMIT_COMPRESS = '20MB';
+        DevUtil.Upload.FILELIMIT_XML = '5MB';
+        DevUtil.Upload.FILELIMIT_FLASH = '100MB';
+        DevUtil.Upload.FILELIMIT_EXCEL = '10MB';
+        DevUtil.Upload.FILELIMIT_NORMALFILE = '100MB';
+        DevUtil.Upload.FILELIMIT_PRIVATE = '50MB';
+        DevUtil.Upload.FILELIMIT_TMP = '50MB';
+    } 
+    if (DevUtil.P.BusinessAcceptance){
+		DevUtil.P.BusinessAcceptance.jsonData_ProcessInfo_Lvgdgxd = [];
+		DevUtil.P.BusinessAcceptance.jsonData_ProcessInfo_YesNo = [['1','是','1'],['0','否','0']];
+		DevUtil.P.BusinessAcceptance.jsonData_ProcessInfo_NoYes = [['0','否','1'],['1','是','0']];
+		DevUtil.P.BusinessAcceptance.jsonData_ProcessInfo_Tjfs = [];
+		DevUtil.P.BusinessAcceptance.jsonData_TaskInfo_NextNode = [];
+		DevUtil.P.BusinessAcceptance.jsonData_Material_PostType = [];
+		DevUtil.P.BusinessAcceptance.jsonData_Material_IsPost = [['1','是','1'],['0','否','0']];
+    }
+}
+
+Ext.onReady(function(){	
+	Ext.getBody().on('click', function(){
+		top.removeClss();
+		top.hideObject();
+	});
+
+	new Ext.KeyMap(document, [{    
+	    key: Ext.event.Event.BACKSPACE,    
+	    fn: function (key, e) {
+	    	var target = e.target;
+	        var t = target.tagName;
+	        var readOnly = target.readOnly; 
+	        if (readOnly || (t !== "INPUT" && t !== "TEXTAREA")) {    
+	            e.stopEvent();    
+	        }    
+	    }    
+	}]); 
+});
+
+Ext.Loader.setConfig({
+    enabled: false    
+});
+/*Ext.Loader.setPath('Ext.ux', '/ext-6.2.0/packages/ux/');
+Ext.require([
+    'Ext.ux.form.SearchField',
+    'Ext.ux.DataTip',
+    'Ext.ux.TabCloseMenu'
+]);*/
+
+</script>
+<link rel="stylesheet" type="text/css" href="/common/style/dev.css"/>
+
+
+<script type="text/javascript">
+Ext.onReady(function(){
+    DevUtil.removeLoading();
+    var timeout = true;        
+    
+    if (true == timeout){
+        DevUtil.MessageBox.alert(DevUtil.P.Msg.WARN, '[0027]会话已过期，请重新登录！', function(){
+            forward();
+        });
+    }
+    else{
+        forward();
+    }
+});
+function forward(){
+    top.document.location = '/';
+}
+
+</script>
+<body>
+<!-- 
+    <div id="loading-mask"></div>
+    <div id="loading">
+      <div class="loading-indicator">
+         <div id="facebookG">
+          <div id="block_1" class="facebook_blockG"></div>
+          <div id="blockG_2" class="facebook_blockG"></div>
+          <div id="blockG_3" class="facebook_blockG"></div>
+         </div>
+         正在加载中,请稍候...
+      </div>
+    </div>
+ -->
+<div id="loginForm">
+    <div id="windowId"></div>
+</div>
+</body>
+</html>
